@@ -1,0 +1,232 @@
+body, input{
+    font-family:
+}
+#nav-display1{
+    display: none;
+}
+.nav-delivery>h4{
+    font-weight: 900;
+    margin-bottom: 0% !important;
+}
+.Delivery{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+nav{
+    position: sticky ;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 2;
+}
+.my-nav-search{
+    width: 40vw;
+    border-radius: 10px;
+    padding-inline: 10px;
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border: none;
+}
+.my-nav-search>input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+main{
+    margin-inline: 7vw;
+}
+.cart{
+    border: none;
+    border-radius: 5px;
+    background-color:  #0C831F;
+    font-weight: 700;
+}
+.hero-section{
+    flex-wrap: wrap;
+}
+.scroll-container{
+    margin:auto;
+    width: 85vw;
+}
+.list{
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+}
+.scroll-container>.list>img{
+    display: inline-block;
+    justify-content: center;
+    margin: 10px;
+}
+.scroll-container ::-webkit-scrollbar{
+    display: none;
+}
+.nav-btn>.login{
+    margin-right: 30px;
+    height: 52px;
+   width: 112px;
+
+}
+
+.cart{
+   text-align: center;
+   height: 52px;
+   width: 112px;
+}
+.card-section>div>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.card-section .card{
+    width: 200px;
+    margin: 10px;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+}
+.card-section .card .quantity{
+    font-weight: 600;
+    color: #707297;
+}
+.card-section .list .card .titleandprice{
+    text-align:left}
+.card-section .list .card .titleandprice h6{
+    text-wrap: wrap;
+    overflow: hidden;
+}
+.list .btn{
+    border-radius: 5px;
+    border: 1px solid black !important;
+    line-height: 20px;
+    font-weight: 600;
+}
+.arrow{
+    position: sticky;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: white;
+    box-shadow:0px 0px 4px black;
+    padding: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-direction: row;
+}
+.arrow:active{
+    background-color: #b8bad3;
+}
+footer{
+    margin-top: 5%;
+    margin-inline: 7%;
+    width: 85vw;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+}
+.grid-container>li>a{
+    text-decoration: none;
+    color: #666666;
+}
+footer>div>div>h3{
+    font-size: 18px;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    gap: 100px;
+    width: 100%;
+}
+.logos{
+    width: 200px
+}
+.Downloadapp{
+    width: 300px;
+}
+footer>p{
+    font-weight: 350;
+    color: #666666;
+    line-height: 100%;
+    margin: 2%;
+}
+
+@media screen and (max-width:1100px) {
+    .grid-footer{
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        margin-right: 0%;
+    }
+    main>.hero-section, main>.card-section{
+       margin-inline: 0%;
+       width: 85vw;
+    }
+    footer>div{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .pancorner{
+        display: none;
+    }
+}
+@media screen and (max-width:1285px) {
+    .pancorner>img{
+        display: none;
+    }
+    .pancorner{
+        margin-inline: 15%;
+        width: 600px; /* Set the width and height to match your new image dimensions */
+    height: 200px;
+    border-radius: 10px;
+    background-image: url('https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/layout-engine/2023-09/01_1.png'); /* URL of the new image */
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    }
+   
+}
+@media screen and (max-width: 990px) {
+    .cart{
+        width: 100px;
+
+    }
+    #nav-display1{
+        display: block;
+        margin-bottom: 5% !important;
+    }
+    #nav-main1{
+        display: none !important;
+    }
+   .cart>i{
+    font-size: 25px;
+    margin-top: 10px;
+   }
+   .cart{
+    margin-top: 10px;
+    width: 70px !important;
+   }
+   form>button{
+    background: transparent;
+    position: sticky;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border: 1px solid #8fb6db!important;
+    border-left: none !important;
+    background-color: white !important;
+    box-shadow: none !important;
+   }
+   form>input{
+    width: 100%;
+    border-radius: 10px 0 0 10px !important;
+    border: 1px solid #8fb6db !important;
+    border-right: none !important;
+    box-shadow: none !important;
+   }
+   
+}
