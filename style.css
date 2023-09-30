@@ -1,6 +1,4 @@
-body, input{
-    font-family:
-}
+
 #nav-display1{
     display: none;
 }
@@ -22,7 +20,7 @@ nav{
     z-index: 2;
 }
 .my-nav-search{
-    width: 40vw;
+    width: 53vw;
     border-radius: 10px;
     padding-inline: 10px;
     background-color: #f8f8f8;
@@ -34,8 +32,10 @@ nav{
     border: none;
     width: 100%;
 }
+
 main{
     margin-inline: 7vw;
+   
 }
 .cart{
     border: none;
@@ -46,6 +46,7 @@ main{
 .hero-section{
     flex-wrap: wrap;
 }
+
 .scroll-container{
     margin:auto;
     width: 85vw;
@@ -69,11 +70,17 @@ main{
    width: 112px;
 
 }
-
+svg :hover{
+    background-color: rgb(241, 238, 232);
+    cursor: pointer;
+}
 .cart{
    text-align: center;
    height: 52px;
    width: 112px;
+}
+.text-success{
+    text-decoration: none !important;
 }
 .card-section>div>a{
     text-decoration: none;
@@ -85,6 +92,7 @@ main{
     padding: 2px;
     display: inline-block;
     text-align: center;
+    box-sizing: border-box !important;
 }
 .card-section .card .quantity{
     font-weight: 600;
@@ -98,15 +106,18 @@ main{
 }
 .list .btn{
     border-radius: 5px;
-    border: 1px solid black !important;
+    border: 0.2px solid black !important;
     line-height: 20px;
     font-weight: 600;
+    background-color: #F7FFF9;
 }
 .arrow{
     position: sticky;
-    top: 50%;
+    top: auto;
     right: 10px;
-    transform: translateY(-50%);
+    align-self: center;
+    left: unset;
+    transform: translateY(-250%);
     z-index: 1;
     background-color: white;
     box-shadow:0px 0px 4px black;
@@ -119,7 +130,7 @@ main{
     background-color: #b8bad3;
 }
 footer{
-    margin-top: 5%;
+    margin-top: 8%;
     margin-inline: 7%;
     width: 85vw;
 }
@@ -139,6 +150,7 @@ footer>div>div>h3{
     grid-template-columns: repeat(3,400px);
     gap: 100px;
     width: 100%;
+    margin-top: 2%;
 }
 .logos{
     width: 200px
@@ -204,12 +216,12 @@ footer>p{
         display: none !important;
     }
    .cart>i{
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 15px;
    }
    .cart{
     margin-top: 10px;
-    width: 70px !important;
+    width: 10%!important;
+    
    }
    form>button{
     background: transparent;
