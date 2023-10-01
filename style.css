@@ -46,7 +46,9 @@ main{
 .hero-section{
     flex-wrap: wrap;
 }
-
+.catogories-1>img{
+  width: auto;
+}
 .scroll-container{
     margin:auto;
     width: 85vw;
@@ -70,14 +72,27 @@ main{
    width: 112px;
 
 }
-svg :hover{
-    background-color: rgb(241, 238, 232);
+.login:hover{
+    background-color: rgb(237, 224, 198);
+    color: white;
+    box-shadow: 0px 0px 5px black !important;
+}
+svg:hover{
     cursor: pointer;
+}
+.card-section .card .btn:hover{
+    background-color: #0C831F !important;
+    color: white !important;
+    
 }
 .cart{
    text-align: center;
    height: 52px;
    width: 112px;
+}
+.cart:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px red;
 }
 .text-success{
     text-decoration: none !important;
@@ -204,6 +219,12 @@ footer>p{
    
 }
 @media screen and (max-width: 990px) {
+    p{
+        font-size: 150% !important;
+    }
+    .card{
+        width: 30% !important;
+    }
     .cart{
         width: 100px;
 
@@ -240,5 +261,30 @@ footer>p{
     border-right: none !important;
     box-shadow: none !important;
    }
-   
+   .pancorner>img, .list >img{
+    width: 100% !important;
+    height: auto !important;
+   }
+   .catogories-1>img{
+    width: 30%  !important;
+    height: auto;
+   }
+   .card{
+    width: 30% !important;
+    height: auto;
+   }
+   .card>img, .card>div{
+       width: 80% !important;
+       height: auto;
+       overflow: hidden;
+    }
+    .card>div>h6{
+        font-size: 150% !important;
+    }
+    footer>div>div>ul>li>a{
+        font-size: 140% !important;
+    }
+    footer>div>div>h3{
+        font-size: 180% !important;
+    }
 }
